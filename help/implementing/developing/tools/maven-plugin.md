@@ -90,6 +90,8 @@ The parameters in the following table are common to all goals except when noted 
 |`userId`|`String`|Yes|`admin`|The user name to authenticate with AEM|All goals except `package`|
 |`verbose`|`boolean`|No|`false`|Enables or disables verbose logging|All goals except `package`|
 
+{style="table-layout:auto"}
+
 ### build {#build}
 
 Builds a content package that is already defined on an AEM instance.
@@ -124,6 +126,8 @@ In addition to the following parameters, see the descriptions in the [Common Par
 |`repositoryId` (POM), `repoID` (command line)|`String`|No|`temp`|The ID of the repository from which the artifact is retrieved|
 |`repositoryUrl` (POM), `repoURL` (command line)|`String`|No|None|The URL of the repository from which the artifact is retrieved|
 |version|String|No|None|The version of the artifact to install|
+
+{style="table-layout:auto"}
 
 ### ls {#ls}
 
@@ -178,6 +182,8 @@ In addition to the following parameters, see the description of the `name` param
 |`version`|`java.lang.String`|Yes|The version defined in the Maven project|The version of the content package|
 |`workDirectory`|`java.io.File`|Yes|The directory defined in the Maven project (build phase)|The directory that contains the content to include in the package|
 
+{style="table-layout:auto"}
+
 #### Using filters {#using-filters}
 
 Use the filters element to define the package content. The filters are added to the `workspaceFilter` element in the `META-INF/vault/filter.xml` file of the package.
@@ -218,6 +224,8 @@ When the filter contains no `mode` element, the default value of `replace` is us
 |`goal`|`String`|No|None|This parameters defines the name of the goal for which to show help. If no value is specified, help for all goals is displayed.|
 |`indentSize`|`int`|No|`2`|The number of spaces to use for the indentation of each level (must be positive if defined)|
 |`lineLength`|`int`|No|`80`|The maximum length of a display line (must be positive if defined)|
+
+{style="table-layout:auto"}
 
 ## Including a Thumbnail Image or Properties File in the Package {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
