@@ -45,6 +45,22 @@ Follow the section below to understand the important considerations while runnin
 
 * If you intend to do top ups, it is essential that the content structure of existing content is not changed from the time the initial extraction is taken to when the top-up extraction is run. Top-ups cannot be run on content whose structure has been changed since the initial extraction. Please ensure you restrict this during the migration process.
 
+## Source Environment Connectivity
+
+The source AEM instance may be running behind a firewall where it can only reach certain hosts which have been added to an allow list. In order to successfully run an extraction, the following endpoints will need to be accessible from the instance that is running AEM:
+
+- The target AEMaaCS environment: `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+- The Azure blob storage service: `*.blob.core.windows.net`
+- The User Mapping IO endpoint: `usermanagement.adobe.io`
+
+To test connectivity to the target AEM as a Cloud Service environment, issue the following cURL command from the shell of the source instance (replace `program_id`, `environment_id`, and `migration_token`):
+
+```
+curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"
+```
+
+If an `HTTP/2 200` is received, a connection to AEMaaCS was successful.
+
 ## Availability {#availability}
 
 >[!CONTEXTUALHELP]
