@@ -24,7 +24,9 @@ The next release (2022.5.0) is planned for May 26, 2022.
 
 ## Release Video {#release-video}
 
-Have a look at the [April 2022 Release Overview](https://video.tv.adobe.com/v/342612?quality=12) video for a summary of the features added in the 2022.4.0 release.
+>[!VIDEO](https://video.tv.adobe.com/v/342612/?quality=12&learn=on)
+
+Have a look at the April 2022 Release Overview video for a summary of the features added in the 2022.4.0 release.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
